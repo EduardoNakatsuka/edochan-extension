@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "EdoChanDay",
-  "description": "Picks an EdoChan day.",
+  "description": "Picks and fills an EdoChan worked day.",
   "version": "1.0",
   "icons": {
     "16": "images/icon-16.png",
@@ -22,16 +22,17 @@
   },
   "permissions": ["scripting", "activeTab"],
   "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+Z",
-        "mac": "Command+Z"
-      }
-    },
-    "pick_day": {
+    "fill_day": {
       "suggested_key": {
         "default": "Ctrl+X",
         "mac": "Command+X"
+      },
+      "description": "Fill the current page with an EdoChan worked day"
+    },
+    "pick_day": {
+      "suggested_key": {
+        "default": "Ctrl+Z",
+        "mac": "Command+Z"
       },
       "description": "Pick an EdoChan day"
     }
